@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  /* Core Brand Colors */
+  --color-brand-red: #FF2E23;
+  --color-brand-cream: #FEE5A8;
+
+  /* Semantic UI Neutrals & Backgrounds */
+  --color-ui-bg: #FFFDF9;         /* Very soft off-white to complement the cream */
+  --color-ui-surface: #FEE5A8;    /* Using your cream as a prominent component surface */
+  --color-ui-dark: #1E1A19;       /* A warm, rich dark charcoal instead of a cold black */
+  
+  /* Text Hierarchy */
+  --color-text-main: #2D2524;     /* Soft dark brown/charcoal for excellent readability */
+  --color-text-muted: #736260;    /* Muted earthy tone for secondary text */
+
+  /* Scale Variations (For fine-grained control) */
+  --color-red-50: #FFF1F0;
+  --color-red-500: #FF2E23;       /* Your exact primary red */
+  --color-red-700: #D61B11;       /* Darker red for hover states */
+  
+  --color-cream-100: #FFF9EB;     /* Lighter hint of cream */
+  --color-cream-500: #FEE5A8;     /* Your exact cream */
+  --color-cream-700: #E6C57E;     /* Darker gold/cream for depth/borders */
+}
+
+body{
+  background-color: var(--color-ui-bg);
+}
