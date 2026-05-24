@@ -7,8 +7,8 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', name: 'home', component: HomeView },
-    { path: '/product/:id', name: 'product-detail', component: ProductView },
-    { path: '/about', name: 'about', component: AboutView }
+    { path: '/product/:id', name: 'product-detail', component: () => import('../views/ProductView.vue') },
+    { path: '/about', name: 'about', component: () => import('../views/AboutView.vue') }
   ]
 })
 

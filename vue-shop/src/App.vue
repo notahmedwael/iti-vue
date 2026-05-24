@@ -66,7 +66,7 @@ onUnmounted(() => console.log("App.vue unmounted"))
 </script>
 
 <template>
-  <div class="min-h-screen bg-slate-50 text-slate-800 antialiased flex flex-col font-sans">
+  <div class="min-h-screen bg-ui-bg text-text-main antialiased flex flex-col font-sans">
     <NavBar :total-items-stock="totalStock" />
     
     <div class="grow">

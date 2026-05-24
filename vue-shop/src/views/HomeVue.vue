@@ -23,8 +23,8 @@ onUnmounted(() => {
     <Carousel class="flex items-center" :images="products.map(p => p.image)" />
 
     <section class="space-y-6">
-      <h2 class="text-xl font-black text-slate-900 tracking-wide flex items-center gap-2">
-        <span class="w-1.5 h-5 bg-red-600 rounded-full"></span>
+      <h2 class="text-xl font-black text-text-main tracking-wide flex items-center gap-2">
+        <span class="w-1.5 h-5 bg-brand-red rounded-full"></span>
         Our Collection
       </h2>
       

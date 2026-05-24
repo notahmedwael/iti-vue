@@ -40,14 +40,14 @@ onUnmounted(() => {
       <ProductDetails :product="currentProduct" @buy="(id) => emit('buy', id)" />
     </div>
     
-    <div v-else class="text-center py-12 card border border-slate-200 bg-white shadow-sm">
-      <h2 class="text-xl font-bold text-slate-700">Requested Catalog ID Not Found</h2>
-      <div class="mt-4"><RouterLink to="/" class="btn btn-sm bg-red-600 border-none text-white">Return Home</RouterLink></div>
+    <div v-else class="text-center py-12 card border border-cream-700 bg-ui-surface shadow-sm">
+      <h2 class="text-xl font-bold text-text-main">Requested Catalog ID Not Found</h2>
+      <div class="mt-4"><RouterLink to="/" class="btn btn-sm bg-brand-red border-none text-white">Return Home</RouterLink></div>
     </div>
 
     <section v-if="currentProduct" class="space-y-6">
-      <h2 class="text-xl font-black text-slate-900 tracking-wide flex items-center gap-2">
-        <span class="w-1.5 h-5 bg-red-600 rounded-full"></span>
+      <h2 class="text-xl font-black text-text-main tracking-wide flex items-center gap-2">
+        <span class="w-1.5 h-5 bg-brand-red rounded-full"></span>
         Related Products
       </h2>
       
